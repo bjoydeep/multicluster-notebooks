@@ -5,7 +5,7 @@ Collection of notebooks for multicluster analytics
 
 1. Analysis of Alerts from multiple clusters:
     - [alert analysis online](https://github.com/bjoydeep/multicluster-notebooks/blob/main/alert_analysis_online.ipynb)
-    - [alert analyzer off cvs files](https://github.com/bjoydeep/multicluster-notebooks/blob/main/alert_analyzer.ipynb)
+    - [alert analyzer off csv files](https://github.com/bjoydeep/multicluster-notebooks/blob/main/alert_analyzer.ipynb)
     - [alert data collection](https://github.com/bjoydeep/multicluster-notebooks/blob/main/alerts_collector.ipynb)
 1. Detecting if one Policy/Signal is triggered by another Policy/Signal.
     - [Readme](https://github.com/bjoydeep/multicluster-notebooks/blob/main/policy_conflict_1.md)
