@@ -7,10 +7,11 @@ Collection of notebooks for multicluster analytics
     - [alert analysis online](https://github.com/bjoydeep/multicluster-notebooks/blob/main/alert_analysis_online.ipynb)
     - [alert analyzer off csv files](https://github.com/bjoydeep/multicluster-notebooks/blob/main/alert_analyzer.ipynb)
     - [alert data collection](https://github.com/bjoydeep/multicluster-notebooks/blob/main/alerts_collector.ipynb)
-1. Detecting if one Policy/Signal is triggered by another Policy/Signal.
-    - [Readme](https://github.com/bjoydeep/multicluster-notebooks/blob/main/policy_conflict_1.md)
+1. Detecting if one Policy/Signal is triggered by another Policy/Signal:
+    - [what is conflict detection](https://github.com/bjoydeep/multicluster-notebooks/blob/main/policy_conflict_1.md)
     - [conflict detection](https://github.com/bjoydeep/multicluster-notebooks/blob/main/policy_conflict_1.ipynb)
-1. Sample SLO/SLI for Kube API Server behaviour on a single cluster
+1. Sample SLO/SLI for Kube API Server behaviour on a single cluster:
+    - [sample SLO/SLI](https://github.com/bjoydeep/multicluster-notebooks/blob/main/SLO_SLI.ipynb)
 
 ### In Works
 
