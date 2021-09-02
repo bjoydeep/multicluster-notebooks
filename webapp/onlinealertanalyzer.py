@@ -13,7 +13,7 @@ def read_data():
     """Read the data ACM Thanos."""
 
     url = "http://observability-thanos-query-frontend.open-cluster-management-observability.svc.cluster.local:9090"
-    token = "doesnotmatter"
+    token = "doesnotmatteryet"
     #connects to Thanos or Prometheus as dictated by the URL
     pc = PrometheusConnect(url=url, headers={"Authorization": "Bearer {}".format(token)}, disable_ssl=True);
 
