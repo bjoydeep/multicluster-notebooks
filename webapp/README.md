@@ -7,7 +7,7 @@ If jupyter notebook with all python code is not your style, here is a another wa
 
 ## To kick the tyres
 1. log into [quay.io](https://quay.io/repository/)
-1. log into your cluster that is running [Red Hat Advanced Cluster Management (ACM) Hub with Observability](https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.3/html/observability/observing-environments-intro#enable-observability) enabled in the command line
+1. log into your Openshift Cluster that is running [Red Hat Advanced Cluster Management (ACM) Hub with Observability](https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.3/html/observability/observing-environments-intro#enable-observability) enabled in the command line
 1. clone this repo
 1. navigate to webapp directory
 1. run: `make deploy` 
@@ -22,6 +22,9 @@ Launch that route-url and have fun.
 1. fork this repo
 1. Update the makefile - it points to `quay.io/bjoydeep/`. Point it to your repo.
 1. run `make publish`
+
+## To destroy 
+To destroy the artifacts created in the Openshift Cluster just delete the `analytics` namespace.
 
 
 
