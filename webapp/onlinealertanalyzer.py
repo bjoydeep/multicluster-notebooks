@@ -9,7 +9,6 @@ import datetime
 
 
 
-@st.cache
 def read_data():
     """Read the data ACM Thanos."""
 
@@ -34,8 +33,8 @@ def read_data():
     alert_total_df["value"]=alert_total_df["value"].astype(float)
     alert_total_df.index= pandas.to_datetime(alert_total_df.index, unit="s")
 
-    st.dataframe(alert_total_df.head())
-    st.dataframe(alert_total_df.count())
+    #st.dataframe(alert_total_df.head())
+    #st.dataframe(alert_total_df.count())
 
     return alert_total_df
 
@@ -65,7 +64,7 @@ def online_alert_analyzer():
     alert_cluster_df = alert_total_df.groupby(["cluster","timestamp"])["value"].sum()
     alert_cluster_df=alert_cluster_df.unstack(level=0)
     st.title("Number of Alerts by cluster by time")
-    st.dataframe(alert_cluster_df.head())
+    #st.dataframe(alert_cluster_df.head())
     fig, ax = plt.subplots(figsize=(30, 10))
     #does not work
     #ax = alert_cluster_df.plot(title="Number of Alerts by cluster")
