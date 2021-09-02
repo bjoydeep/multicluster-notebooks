@@ -1,0 +1,22 @@
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: analytics-role
+rules:
+  - apiGroups: ["security.openshift.io"]
+    resources: ["securitycontextconstraints"]
+    resourceNames: ["privileged"]
+    verbs: ["use"]
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: analytics-rb
+subjects:
+  - kind: ServiceAccount
+    name: analytics
+roleRef:
+  kind: Role
+  name: analytics-role
+  apiGroup: rbac.authorization.k8s.io

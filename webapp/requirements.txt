@@ -1,0 +1,8 @@
+pandas
+numpy
+streamlit
+prometheus-api-client
+matplotlib
+seaborn
+datetime
+statsmodels

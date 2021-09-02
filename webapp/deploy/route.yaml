@@ -1,0 +1,16 @@
+---
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: analytics
+  namespace: analytics
+spec:
+  path: /
+  to:
+    kind: Service
+    name: analytics
+    weight: 100
+  port:
+    targetPort: http
+  wildcardPolicy: None
+---

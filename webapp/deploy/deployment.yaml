@@ -1,0 +1,25 @@
+---
+apiVersion: apps/v1 
+kind: Deployment
+metadata:
+  name: analytics
+  namespace: analytics
+spec:
+  selector:
+    matchLabels:
+      app: analytics
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: analytics
+    spec:
+      # serviceAccountName: analytics
+      containers:
+      - name: analytics
+        image: quay.io/bjoydeep/analytics:latest
+        ports:
+        - containerPort: 8501
+
+---
+
