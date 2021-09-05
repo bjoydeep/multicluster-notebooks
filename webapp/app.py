@@ -14,6 +14,7 @@ from onlinealertanalyzer import online_alert_analyzer
 
 def main():
 
+    st.set_page_config(layout="wide")
     # Setting up sidebar 
     st.sidebar.header('Analytics Menu')
 
