@@ -49,6 +49,7 @@ def alert_analyzer():
     ax.plot(alert_cluster_df)
     # st.title("Number of Alerts by Cluster by time")
     ax.set_title('Number of Alerts by Cluster by time')
+    plt.xticks(rotation=90)
     plt.show()
     st.pyplot(fig)
 
@@ -60,6 +61,7 @@ def alert_analyzer():
     ax.plot(alert_alert_df)
     # ax=alert_alert_df.plot(title="Number of different Alerts")
     ax.legend(bbox_to_anchor=(0., 1.06, 1., .102), loc='lower left', ncol=2, mode="expand", borderaxespad=0.)
+    plt.xticks(rotation=90)
     plt.show()
     st.title("Number of different Alerts")
     st.pyplot(fig)
