@@ -3,6 +3,9 @@ import streamlit as st
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
+import plotly.express as px
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
 
 
 
@@ -52,6 +55,31 @@ def alert_analyzer():
     plt.xticks(rotation=90)
     plt.show()
     st.pyplot(fig)
+
+    ### Multiline chart
+    st.title("Another display style")
+    fig = px.line(alert_cluster_df)
+    fig.update_layout(showlegend=False,
+                    #title="Games Category by install amount",
+                    plot_bgcolor="#FFF",  # Sets background color to white
+                    margin=dict(l=0,r=0,b=0,t=0,pad=0),
+                    title_x=0.5,
+                    #autosize=True,
+                    width=1200,
+                    height=500,
+                    xaxis=dict(
+                    title="",
+                    linecolor="#BCCCDC",  # Sets color of X-axis line
+                    showgrid=False  # Removes X-axis grid lines
+                    ),
+                    yaxis=dict(
+                    title="",  
+                    linecolor="#BCCCDC",  # Sets color of Y-axis line
+                    showgrid=False,  # Removes Y-axis grid lines    
+                    )
+                    )
+    #fig.layout[axis].tickfont = dict(color = 'rgba(0,0,0,0)')                
+    st.plotly_chart(fig)
 
     # Number of different Alerts
     alert_alert_df = alert_total_df.groupby(["alertname","timestamp"])["value"].sum()
